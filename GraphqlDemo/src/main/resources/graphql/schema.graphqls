@@ -1,0 +1,28 @@
+type Student{
+    id : Int!
+    name : String
+    course : [Course]
+}
+
+type Teacher{
+    id : Int!
+    name : String
+    course : [Course]
+}
+
+type Course{
+    id : Int!
+    name :String
+    teacher : Teacher
+    student : [Student]
+}
+type StudentCourse{
+    id : Int!
+    teacher : Teacher
+    student : Student
+}
+
+input TeacherInput{
+    id : Int!
+    name : String
+}

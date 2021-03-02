@@ -1,0 +1,14 @@
+type Query{
+    findStudentById(id:Int!): Student
+#
+    findAllStudent : [Student]!
+#
+#    findTeacherById(id : Int!) : Teacher
+#
+#    findAllTeacher : [Teacher]!
+#
+#    findAllCourse : [Course]!
+}
+type Mutation {
+    insert(teacher : TeacherInput!) : Teacher
+}
